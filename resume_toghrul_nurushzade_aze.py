@@ -3,12 +3,9 @@ import streamlit as st
 # --- PAGE SETUP ---
 
 
-diller = st.Page(
-    "https://resume-toghrul-nurushzade.streamlit.app/",
-    title="Ingilis versiyası",
-    icon=":material/language:",
-)
-
+st.sidebar.title("Dillər arasında keçid")
+if st.sidebar.button("İngilis versiyası"):
+    st.switch_page("https://resume-toghrul-nurushzade.streamlit.app/")
 
 haqqimda = st.Page(
     "views/haqqimda.py",
@@ -37,7 +34,6 @@ ish_tecrubesi = st.Page(
 # --- NAVIGATION SETUP [WITH SECTIONS]---
 pg = st.navigation(
     {
-        "Dillər arasında keçid": [diller]
         "Məlumatlar": [haqqimda, bacariqlar],
         "Təhsil və İş təcrübəsi": [tehsil, ish_tecrubesi],
     }
