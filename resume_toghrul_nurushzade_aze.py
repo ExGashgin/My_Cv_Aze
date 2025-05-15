@@ -37,7 +37,7 @@ ish_tecrubesi = st.Page(
 # --- NAVIGATION SETUP [WITH SECTIONS]---
 pg = st.navigation(
     {
-        "": [diller]
+        "Dillər arasında keçid": [diller]
         "Məlumatlar": [haqqimda, bacariqlar],
         "Təhsil və İş təcrübəsi": [tehsil, ish_tecrubesi],
     }
