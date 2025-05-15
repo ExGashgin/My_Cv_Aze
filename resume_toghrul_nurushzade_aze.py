@@ -2,11 +2,6 @@ import streamlit as st
 
 # --- PAGE SETUP ---
 
-
-st.sidebar.title("Dillər arasında keçid")
-if st.sidebar.button("İngilis versiyası"):
-    st.switch_page("https://resume-toghrul-nurushzade.streamlit.app/")
-
 haqqimda = st.Page(
     "views/haqqimda.py",
     title="Haqqımda",
