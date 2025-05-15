@@ -3,6 +3,13 @@ import streamlit as st
 # --- PAGE SETUP ---
 
 
+diller = st.Page(
+    "https://resume-toghrul-nurushzade.streamlit.app/",
+    title="Ingilis versiyası",
+    icon=":material/language:",
+)
+
+
 haqqimda = st.Page(
     "views/haqqimda.py",
     title="Haqqımda",
@@ -30,6 +37,7 @@ ish_tecrubesi = st.Page(
 # --- NAVIGATION SETUP [WITH SECTIONS]---
 pg = st.navigation(
     {
+        "": [diller]
         "Məlumatlar": [haqqimda, bacariqlar],
         "Təhsil və İş təcrübəsi": [tehsil, ish_tecrubesi],
     }
